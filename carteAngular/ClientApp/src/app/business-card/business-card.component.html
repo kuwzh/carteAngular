@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="form-inputs">
+    <input [(ngModel)]="fullName" placeholder="Full Name">
+    <input [(ngModel)]="title" placeholder="Title">
+    <textarea [(ngModel)]="motto" placeholder="Motto"></textarea>
+    <textarea [(ngModel)]="jobDescription" placeholder="Job Description"></textarea>
+    <input [(ngModel)]="followers" type="number" placeholder="Followers">
+    <input [(ngModel)]="following" type="number" placeholder="Following">
+    <input [(ngModel)]="projects" type="number" placeholder="Projects">
+  </div>
+  <div class="card-preview">
+    <h2>{{ fullName }}</h2>
+    <p>{{ title }}</p>
+    <p>{{ motto }}</p>
+    <p>{{ jobDescription }}</p>
+    <p>Followers: {{ followers }}</p>
+    <p>Following: {{ following }}</p>
+    <p>Projects: {{ projects }}</p>
+  </div>
+</div>
